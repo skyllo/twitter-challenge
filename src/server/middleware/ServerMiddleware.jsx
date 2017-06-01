@@ -28,7 +28,7 @@ const ServerMiddleware = (req, res) => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, 
             maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-      <title>CNN Tweet Test</title>
+      <title>Tweet Challenge</title>
       ${cssFiles.map(item => `<link rel="stylesheet" type="text/css" href="${item}">`).join('')}
     </head>
     <body>
