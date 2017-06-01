@@ -5,12 +5,12 @@ Twitter Challenge
 
 # Dev
 ```
-yarn start
+yarn install && yarn start
 open http://localhost:30000/cnnbrk-tweets
 ```
 
 # Production
 ```
-yarn run build && yarn run prod
+yarn install && yarn run build && yarn run prod
 open http://localhost:30000/cnnbrk-tweets
 ```
