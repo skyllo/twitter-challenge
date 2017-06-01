@@ -1,0 +1,15 @@
+$break-small: 600px;
+
+.tweets {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 20px;
+
+  &__tweet {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 630px) {
+    grid-template-columns: 100%;
+  }
+}
