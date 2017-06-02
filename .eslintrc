@@ -6,6 +6,9 @@
     "max-len": [1, 120, 2, { "ignoreComments": true }],
     "no-return-assign": ["warn"]
   },
+  "env": {
+    "jest": true
+  },
   "globals": {
     "window": true,
     "document": true

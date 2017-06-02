@@ -1,6 +1,6 @@
 export const UPDATE_TWEETS = 'UPDATE_TWEETS';
 
-export function updateTweets(tweets) {
+export function updateTweets(tweets = []) {
   return {
     type: UPDATE_TWEETS,
     tweets
