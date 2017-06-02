@@ -1,3 +1,5 @@
+import 'whatwg-fetch';
+
 export const UPDATE_TWEETS = 'UPDATE_TWEETS';
 
 export function updateTweets(tweets = []) {
@@ -14,7 +16,7 @@ export function updateTweetsAsync(twitterName = 'cnnbrk') {
       const tweets = Object.keys(json).length ? json : ['Nothing to see here.'];
       dispatch(updateTweets(tweets));
     })
-    .catch(() => {
+    .catch((e) => {
       const errorMessage = 'Error occurred whilst getting tweets.';
       dispatch(updateTweets([errorMessage]));
     });
